@@ -13,3 +13,13 @@ My GSoC 2026 proposal and repository study for Magic ePaper Badge.
 - lib/view/
 - lib/pro_image_editor/features/
 - lib/ndef_screen/
+
+  # gsoc-2026-magic-epaper-proposal
+
+📌 **Proposal Repository Link:**  
+https://github.com/YOUR_USERNAME/gsoc-2026-magic-epaper-proposal
+
+📄 **Proposal PDF:**  
+[GSoC Proposal PDF](./GSOC-proposal1.pdf)
+
+My GSoC 2026 proposal and repository study for Magic ePaper Badge.
