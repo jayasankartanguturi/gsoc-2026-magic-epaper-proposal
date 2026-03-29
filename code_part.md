@@ -1,4 +1,4 @@
-# Code Design (GSoC Proposal)
+# Code Design for magic epaper project
 
 This file contains implementation ideas from my GSoC proposal.
 
