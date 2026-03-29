@@ -4,9 +4,8 @@ This file contains implementation ideas from my GSoC proposal.
 
 ---
 
-## 1. Editor State Controller
-
 ```dart
+// 1. Editor State Controller
 class EditorController extends StateNotifier<CanvasState> {
   EditorController() : super(CanvasState.initial());
 
@@ -31,10 +30,8 @@ class EditorController extends StateNotifier<CanvasState> {
     state = CanvasState.initial();
   }
 }
----
-## 2. Undo / Redo Command System
 
-```dart
+// 2. Undo / Redo Command System
 abstract class CanvasCommand {
   void execute(CanvasState state);
   void revert(CanvasState state);
@@ -55,10 +52,8 @@ class AddTextCommand extends CanvasCommand {
     state.textElements.removeLast();
   }
 }
----
-## 3. Tri-Color Rendering Engine
 
-```dart
+// 3. Tri-Color Rendering Engine
 class EpaperRenderer {
   Uint8List render(ui.Image image) {
     final pixels = extractPixels(image);
@@ -74,10 +69,8 @@ class EpaperRenderer {
     return packDisplayBuffer(converted);
   }
 }
----
-## 4. NFC Transfer Service
 
-```dart
+// 4. NFC Transfer Service
 class BadgeTransferService {
   Future<bool> transfer(Uint8List payload) async {
     const maxAttempts = 3;
@@ -96,10 +89,8 @@ class BadgeTransferService {
     return await session.verify();
   }
 }
----
-## 5. Image Optimization Pipeline
 
-```dart
+// 5. Image Optimization Pipeline
 class ImageOptimizer {
   List<BadgeColor> optimize(List<Pixel> pixels) {
     return pixels.map((pixel) {
@@ -113,3 +104,4 @@ class ImageOptimizer {
     }).toList();
   }
 }
+
